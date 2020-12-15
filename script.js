@@ -37,7 +37,7 @@ function generatePassword() {
  
   /*Does this need to be in a function?List of variables and their prompt for input except for passlength*/
   var confirmUpper = confirm("Would you like Uppercase letters in your password? Recommended as a best practice.");
-  var confirmLower = confrim("Would you like Lowercase letters in your password?");
+  var confirmLower = confirm("Would you like Lowercase letters in your password?");
   var confirmNum = confirm("Would you like numbers in your password? Recommended as best practice.");
   var confirmSym = confirm("Would you like symbols such as !,@,#,$,%,^,&, and ? Recommended as a best practice.");
 
@@ -45,23 +45,23 @@ function generatePassword() {
    while(confirmUpper === false && confirmLower === false && confirmNum === false && confirmSym === false) {
     alert("You must choose a minimum of one attribute.");
     var confirmUpper = confirm("Would you like Uppercase letters in your password? Recommended as best practices");
-    var confirmLower = confrim("Would you like Lowercase letters in your password?");
+    var confirmLower = confirm("Would you like Lowercase letters in your password?");
     var confirmNum = confirm("Would you like numbers in your password? Recommended as best practice");
     var confirmSym = confirm("Would you like symbols such as !,@,#,$,%,^,&, and ? Recommended a best practice");
    };
+   passwordGenerate (confirmNum, confirmLower, confirmNum, confirmSym, passLength);
 };
 /*prompt input generator for password length */
-function passwordGenerate() {
+function passwordGenerate(confirmNum, confirmLower, confirmNum, confirmSym, passLength) {
   var password = ""// this is a local var. how do I get this out of here?
   for (i = 1; i=== passLength; i++) {
-  if (confirmUpper = true) {
+   if (confirmUpper = true) {
     var char = Math.floor(Math.random() 
     *upperCase.length + 1);
     password += upperCase.charAt(char)
-       
-  }
-  return password;
-
+   };
+  };
+  
   for (i = 1; i=== passLength; i++) {
     if (confirmlower = true) {
       var char = Math.floor(Math.random() 
@@ -88,5 +88,5 @@ function passwordGenerate() {
     return password;
   }        
 }
-
-//How do I get the password out and printed
+ 
+/*How do I get the password out and printed*/
