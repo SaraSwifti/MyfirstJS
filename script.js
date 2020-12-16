@@ -59,22 +59,15 @@ function passwordGenerate(confirmNum, confirmLower, confirmNum, confirmSym, pass
   var choices;
   choices = [confirmUpper, confirmLower, confirmNum, confirmSym];
 
-   if (choices() = true) {
+   if (choices = true) {
     i = 1;
     i=== passLength;
     i++;
     var char = Math.floor(Math.random() 
     *choices.length + 1);
-    password += choices.charAt(char)
+    password += choices.char
    };
    return password
-  }
-
-  document.getElementById("#password").innerHTML = password;
-  
-  
-  
-  
-    
+  }    
  
 /*How do I get the password out and printed*/
