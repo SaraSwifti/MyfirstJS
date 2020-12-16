@@ -55,7 +55,7 @@ function generatePassword() {
 };
 /*prompt input generator for password length */
 function passwordGenerate(confirmNum, confirmLower, confirmNum, confirmSym, passLength) {
-  var password = ""// this is a local var. how do I get this out of here?
+  var password = "";
   var choices;
   choices = [confirmUpper, confirmLower, confirmNum, confirmSym];
 
@@ -65,9 +65,9 @@ function passwordGenerate(confirmNum, confirmLower, confirmNum, confirmSym, pass
     i++;
     var char = Math.floor(Math.random() 
     *choices.length + 1);
-    password += choices.char
+    password += choices.char;
    };
    return password
   }    
- 
+ console.log(password);
 /*How do I get the password out and printed*/
