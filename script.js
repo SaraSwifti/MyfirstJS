@@ -25,6 +25,8 @@ var confirmUpper;
 var confirmLower;
 var confirmNum;
 var confirmSym;
+var choices = [confirmUpper, confirmLower, confirmNum, confirmSym]
+
 function generatePassword() { 
  var passLength = prompt("How many charaters long would you like your password to be? It Cannot be less than 8 and not more than 128 in character length.");
   passLength = parseInt(passLength); 
@@ -49,44 +51,30 @@ function generatePassword() {
     var confirmNum = confirm("Would you like numbers in your password? Recommended as best practice");
     var confirmSym = confirm("Would you like symbols such as !,@,#,$,%,^,&, and ? Recommended a best practice");
    };
-   passwordGenerate (confirmNum, confirmLower, confirmNum, confirmSym, passLength);
+   passwordGenerate (confirmUpper, confirmLower, confirmNum, confirmSym, passLength);
 };
 /*prompt input generator for password length */
 function passwordGenerate(confirmNum, confirmLower, confirmNum, confirmSym, passLength) {
   var password = ""// this is a local var. how do I get this out of here?
-  for (i = 1; i=== passLength; i++) {
-   if (confirmUpper = true) {
+  var choices;
+  choices = [confirmUpper, confirmLower, confirmNum, confirmSym];
+
+   if (choices() = true) {
+    i = 1;
+    i=== passLength;
+    i++;
     var char = Math.floor(Math.random() 
-    *upperCase.length + 1);
-    password += upperCase.charAt(char)
+    *choices.length + 1);
+    password += choices.charAt(char)
    };
-  };
-  
-  for (i = 1; i=== passLength; i++) {
-    if (confirmlower = true) {
-      var char = Math.floor(Math.random() 
-      *lowerCase.length + 1);
-      password += lowerCase.charAt(char);
-    }
-    return password;
+   return password
   }
 
-  for (i = 1; i=== passLength; i++) {
-    if (confirmNum = true) {
-      var char = Math.floor(Math.random() 
-      *numberChar.length + 1);
-      password += numberChar.charAt(char);
-    }
-    return password;
-  }
-  for (i = 1; i=== passLength; i++) {
-    if (confirmSym = true) {
-      var char = Math.floor(Math.random() 
-      *symbolCase.length + 1);
-      password += symbolCase.charAt(char)
-    }
-    return password;
-  }        
-}
+  document.getElementById("#password").innerHTML = password;
+  
+  
+  
+  
+    
  
 /*How do I get the password out and printed*/
