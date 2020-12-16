@@ -1,1 +1,2 @@
 # MyfirstJS
+I honestly don;t know how I did this. I think that I approached it the most difficult way possile . Worked my way into a corner and Jacob really came to my rescue and helped me finish it. I am going to need to study some of the more complex things here to learn from what I did.

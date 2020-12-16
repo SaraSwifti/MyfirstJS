@@ -68,11 +68,18 @@ function passwordGenerate(passLength, confirmUpper, confirmLower, confirmNum, co
   }
   if (confirmSym) {
     passwordOptions = passwordOptions.concat(symbolCase);
-  };
+  }; 
   for (var i = 0; i < passLength; i++) {
     var randomIndex = Math.floor(Math.random() * passwordOptions.length);
-    console.log(passwordOptions[randomIndex]);
-    //password = //randomIndex + randomIndex
+   // console.log(passwordOptions[randomIndex]);
+    var password = password + passwordOptions[randomIndex].join;
+    console.log(password);
+
+
+    //joining the arrays together in one password sting
+     
+     //var password = passwordOptions[randomIndex].join;
+     
   };
 return password
 }
