@@ -52,10 +52,9 @@ function generatePassword() {
   };
   return passwordGenerate(passLength, confirmUpper, confirmLower, confirmNum, confirmSym, passLength);
 };
-/*prompt input generator for password length */
+/*prompt input generator for password length, boolean on if that element is included*/
 function passwordGenerate(passLength, confirmUpper, confirmLower, confirmNum, confirmSym, passLength) {
   var password = "";
-  var choices = [confirmUpper, confirmLower, confirmNum, confirmSym];
   var passwordOptions = [];
   if (confirmUpper) {
     passwordOptions = passwordOptions.concat(upperCase);
@@ -68,19 +67,20 @@ function passwordGenerate(passLength, confirmUpper, confirmLower, confirmNum, co
   }
   if (confirmSym) {
     passwordOptions = passwordOptions.concat(symbolCase);
-  }; 
+  };
   for (var i = 0; i < passLength; i++) {
     var randomIndex = Math.floor(Math.random() * passwordOptions.length);
+    //joining the arrays together in one password sting
     var password = password + passwordOptions[randomIndex];
-    
-   // console.log(passwordOptions[randomIndex]);
+
+    // console.log(passwordOptions[randomIndex]);
     //passwordOptions[randomIndex].join;
     //console.log(password);
-    //joining the arrays together in one password sting
-     //var password = passwordOptions[randomIndex].join;
-     
+
+    //var password = passwordOptions[randomIndex].join;
+
   };
-return password
+  return password
 }
 
 /*How do I get the password out and printed*/
