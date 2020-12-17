@@ -71,13 +71,12 @@ function passwordGenerate(passLength, confirmUpper, confirmLower, confirmNum, co
   }; 
   for (var i = 0; i < passLength; i++) {
     var randomIndex = Math.floor(Math.random() * passwordOptions.length);
+    var password = password + passwordOptions[randomIndex];
+    
    // console.log(passwordOptions[randomIndex]);
-    var password = password + passwordOptions[randomIndex].join;
-    console.log(password);
-
-
+    //passwordOptions[randomIndex].join;
+    //console.log(password);
     //joining the arrays together in one password sting
-     
      //var password = passwordOptions[randomIndex].join;
      
   };

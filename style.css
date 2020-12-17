@@ -27,7 +27,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(205, 28%, 87%);
 }
 
 .card {
@@ -48,7 +48,6 @@ header {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
-  position: center;
 }
 
 .card-body {
@@ -90,8 +89,8 @@ header {
 }
 
 button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
+  cursor: pointer;
+  background: #b7cae0;
 }
 
 .float-right {
@@ -119,7 +118,7 @@ button[disabled] {
   overflow: hidden;
 }
 
-@media (max-width: 690px) {
+@media (min-width: 350px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
@@ -128,10 +127,11 @@ button[disabled] {
 
   #password {
     font-size: 1rem;
+    color: green
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 350px) {
   .btn {
     font-size: 0.8rem;
   }
